@@ -1,7 +1,20 @@
+## Running the App
 
+1. Activate the Python virtual environment:
 
-To run this app:
+    ```
+    source bin/activate
+2. Run the app
 
-1: Run source bin/activate to get into the python virtual environment
+   ```
+    python main.py
+## Dependencies
 
-2: Run python main.py
+- `ddtrace`
+- `openai`
+
+## Other Notes
+
+- A Datadog Agent must be running, and you must set the DD_API_KEY as an environment variable in this app. 
+
+- You will also need an OpenAI API key set appropriately.

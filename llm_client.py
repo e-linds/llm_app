@@ -11,7 +11,7 @@ LLMObs.enable(
 
 client = OpenAI()
 
-def get_response(user_input):
+def get_openai_response(user_input):
 
     completion = client.chat.completions.create(
     model="gpt-4.1",

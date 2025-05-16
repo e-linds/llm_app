@@ -1,11 +1,11 @@
 
-from llm_client import get_response
+from llm_client import get_openai_response
 
 def app():
 
    input_var = input('''What is your question? 
               ''')
-   answer = get_response(input_var)
+   answer = get_openai_response(input_var)
 
    print(answer)
 
