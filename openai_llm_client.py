@@ -11,13 +11,20 @@ LLMObs.enable(
 
 client = OpenAI()
 
-def get_openai_response(user_input):
+def get_openai_response():
+    
+    model_role_desc = input('''Describe the role. 
+              ''')
+    
+    question = input('''What is your question? 
+              ''')
+    
 
     completion = client.chat.completions.create(
     model="gpt-4.1",
     messages=[
-        {"role": "developer", "content": "You are a helpful assistant who gives a maximum of ten-word answers."},
-        {"role": "user", "content": f"{user_input}"}
+        {"role": "developer", "content": f"{model_role_desc}. You give a maximum of ten-word answers."},
+        {"role": "user", "content": f"{question}"}
         ]
     )
 
