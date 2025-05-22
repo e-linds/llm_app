@@ -12,7 +12,7 @@ LLMObs.enable(
 
 client = OpenAI()
 
-@task
+# @task
 def get_role_desc():
     
     user_input = input('''What is the model's role?
@@ -20,7 +20,7 @@ def get_role_desc():
     
     return user_input
 
-@task
+# @task
 def get_prompt():
 
     user_input = input('''What would you like to say or ask?
@@ -28,7 +28,7 @@ def get_prompt():
     
     return user_input
 
-@llm
+# @llm
 def get_openai_response(role_desc, prompt):
     
 
@@ -47,7 +47,7 @@ def get_openai_response(role_desc, prompt):
 
 
 @workflow
-def overall_workflow():
+def openai_workflow():
 
     role_desc = get_role_desc()
 
