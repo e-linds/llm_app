@@ -17,4 +17,4 @@
 
 - A Datadog Agent must be running, and you must set the DD_API_KEY as an environment variable in this app. 
 
-- You will also need an OpenAI API key set appropriately.
+- You will also need an OpenAI API key and a Google GenAI API key set appropriately.
